@@ -1,0 +1,22 @@
+<div class="sidebar p-5 w-100 bg-dark" style="height: calc(100vh - 62px); border-right: 1px solid #30363D;">
+    <ul class="m-0 p-0 w-100" style="list-style: none">
+        <li class="w-100">
+            <a (click)="toggleComponent('dashboard')" style="color: #6EE4DA" class="text-center d-flex justify-content-between align-items-center p-3">
+                <fa-icon [icon]="faNewspaper" class="fs-3" ></fa-icon>
+                <span>Dashboard</span>
+            </a>
+        </li>
+        <li class="w-100">
+            <a (click)="toggleComponent('grafico-barras')" style="color: #6EE4DA; text-decoration: none;" class="text-center d-flex justify-content-between align-items-center p-3">
+                <fa-icon [icon]="faChartColumn" class="fs-3" ></fa-icon>
+                <span>Gr&aacute;fico de Barras</span>
+            </a>
+        </li>
+        <li class="w-100">
+            <a (click)="toggleComponent('grafico-lineas')" style="color: #6EE4DA" class="text-center d-flex justify-content-between align-items-center p-3">
+                <fa-icon [icon]="faChartLine" class="fs-3" ></fa-icon>
+                <span>Gr&aacute;fico de Lineas</span>
+            </a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,58 @@
+<div class="container-fluid">
+  <div class="card p-5" style="width: max-content; height: max-content;">
+    <div class="card-body">
+      <h5 class="card-title">Dashboard</h5>
+      <h6 class="card-subtitle mb-2 text-body-secondary">Aqu&iacute; puedes agregar los gastos e ingresos</h6>
+      <div class="row">
+        <div class="col-6 p-4">
+          <h5>Ingresos</h5>
+          <div class="input-group mb-3">
+            <input type="number" class="form-control" name="ingresos" id="" [formControl]="registrarIngresoController">
+            <span class="input-group-text">€</span>
+          </div>
+          <div class="input-group mb-3">
+            <label for="dateingreso" class="input-group-text">Fecha</label>
+            <input type="date" class="form-control" name="dateingreso" id="" [formControl]="fechaController">
+          </div>
+          @if (mostrarErrorIngreso){
+            <div class="alert alert-danger" role="alert">
+              No puedes ingresar un valor vacio
+            </div>
+          }@else if (mostrarErrorFechaIngreso){
+            <div class="alert alert-danger" role="alert">
+              No puedes ingresar una fecha vacia
+            </div>
+          }
+          <button class="btn btn-outline-primary" (click)="checkIngreso()">Registrar Ingreso</button>
+        </div>
+        <div class="col-6 p-4">
+          <h5>Gastos</h5>
+          <div class="input-group mb-3">
+            <input type="number" class="form-control" name="gastos" id="" [formControl]="registrarGastoController">
+            <span class="input-group-text">€</span>
+          </div>
+          <div class="input-group mb-3">
+            <label for="dateingreso" class="input-group-text">Fecha</label>
+            <input type="date" class="form-control" name="dategasto" id="" [formControl]="fechaController">
+          </div>
+          @if (mostrarErrorGasto){
+            <div class="alert alert-danger" role="alert">
+              No puedes ingresar un valor vacio
+            </div>
+          }@else if (mostrarErrorFechaGasto){
+            <div class="alert alert-danger" role="alert">
+              No puedes ingresar una fecha vacia
+            </div>
+          }
+          <button class="btn btn-outline-danger" (click)="checkGasto()">Registrar Gasto</button>
+
+        </div>
+        
+      </div>
+      <div class="card-footer text-center w-100">
+            <h4>Saldo Actual</h4>
+            <p>{{ saldo() }} €</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+:root{
+    --text-color: #6EE4DA;
+    --bg-color: #000000;
+}
+
+app-sidebar{
+    display: flex;
+    width: 25%;
+}

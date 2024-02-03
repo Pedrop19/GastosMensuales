@@ -1,0 +1,32 @@
+<nav
+    class="navbar navbar-expand-sm navbar-dark p-1 m-0" style="background-color: #000; border-bottom: 1px solid #30363D;"
+>
+    <div class="container">
+        <button class="navbar-brand btn border-0 me-2" type="button">
+            <fa-icon [icon]="faMoneyBill" class="fs-3" style="color:green;"></fa-icon></button>
+        <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active fs-4" routerLink="/dashboard" style="color: #6EE4DA"
+                        >Dashboard
+                        <span class="visually-hidden">(current)</span></a
+                    >
+                </li>
+            </ul>
+            <button class="btn border-0 me-2 fs-3" type="button">
+                <fa-icon style="color: #6EE4DA" [icon]="faRotateLeft"></fa-icon>
+            </button>
+        </div>
+    </div>
+</nav>
