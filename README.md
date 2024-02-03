@@ -11,10 +11,9 @@ npm i
 ```shell
 ng serve
 ```
-Esto creara un enlace a [localhost:4200](localhost:4200)
+Esto creara un enlace: [localhost:4200](http://localhost:4200)
 
-## Firebase
+## Proyecto Online
 
-El proyecto esta subido a Firebase para poder verlo online sin necesidad de descargarselo
+El proyecto esta subido a [Firebase](https://gestiongastos-a0e7f.web.app) para poder verlo online sin necesidad de descargarselo
 
-El enlace: 
