@@ -69,7 +69,7 @@ export class GraficoBarrasComponent implements OnInit {
       }
     });
   }
-  
+  //////
 
 
     ngOnInit(): void {

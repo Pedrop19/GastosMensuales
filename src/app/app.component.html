@@ -1,7 +1,7 @@
 <app-navbar></app-navbar>
 <div class="container-fluid d-flex m-0 p-0 w-100">
     <app-sidebar></app-sidebar>
-    <div class="d-flex h-75 w-75 align-items-start justify-content-center mt-4">
+    <div class="d-flex flex-column align-items-center justify-content-start mt-4 flex-grow-1">
         @if (mostrarDashboard){
             <app-dashboard></app-dashboard>
         } @else if (mostarGraficoBarras){
